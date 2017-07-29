@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="main.css">
+<head>
+  <title>Costura AlterNativa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Oswald:300" rel="stylesheet">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#about').click(function(){
+    	var height = $(window).height();
+    	if (height <= 600) {
+    		$('html, body').animate({scrollTop : 200},800);
+    	} else {
+			$('html, body').animate({scrollTop : height-401},800);
+		}
+	});
+	$('#services').click(function(){
+    	var height = $(window).height();
+    	if (height <= 600) {
+    		$('html, body').animate({scrollTop : 600},800);
+    	} else {
+			$('html, body').animate({scrollTop : height-1},800);
+		}
+	});
+	$('#contact').click(function(){
+    	var height = $(window).height();
+    	if (height <= 600) {
+    		$('html, body').animate({scrollTop : 1000},800);
+    	} else {
+			$('html, body').animate({scrollTop : height+399},800);
+		}
+	});
+	$(window).resize(function(){
+        
+    });
+});
+
+function changeNavBar() {
+	/*document.getElementById("navbar").style.backgroundColor = "white";
+	//document.getElementById("navbar-logo").backgroundImage = "url(logo.svg)";
+
+
+	document.getElementsByClassName("navbar-list-item")[0].style.color = "black";
+	document.getElementsByClassName("navbar-list-item")[1].style.color = "black";
+	document.getElementsByClassName("navbar-list-item")[2].style.color = "black";*/
+}
+</script>
+<body onscroll="changeNavBar()">
+	<div class="navbar" id="navbar">
+		<div id="navbar-logo">
+			<!--CosturaAlterNativa-->
+		</div>
+		<div class="navbar-item" id="navbar-list">
+			<a class="navbar-list-item" id="about">Detalles</a>
+			<a class="navbar-list-item" id="services">Servicios</a>
+			<a class="navbar-list-item" id="contact">Contactáctenos</a>
+		</div>
+		<div id="boton">
+		</div>
+	</div>
+	<div>
+	<video playsinline autoplay muted loop poster="maquina.JPG" id="video">
+    	<source src="cociendo.MP4" type="video/mp4">
+	</video>
+	<div>
+	<div id="cover">
+	</div>
+	<div class="section" id="section-about">
+		<div class="section-heading" id="section-heading-about">Detalles</div>
+	</div>
+	<div class="section" id="section-services">
+		<div class="section-heading" id="section-heading-services">Servicios</div>
+	</div>
+	<div class="section" id="section-contact">
+		<div class="section-heading" id="section-heading-contact">Contactáctenos</div>
+	</div>
+	<div class="section" id="section-footer">
+		<div class="section-heading" id="section-heading-footer">Footer</div>
+	</div>
+
+</body>
+</html>
