@@ -6,7 +6,7 @@ body {
 }
 @font-face {
 	font-family: lithos;
-	src: url(fonts/LithosPro/LithosPro-Regular.otf);
+	src: url(LithosPro-Regular.otf);
 }
 .navbar {
 	position: fixed;
