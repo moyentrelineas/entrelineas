@@ -29,7 +29,7 @@ body {
 	position: absolute;
 	top: 25px;
 	height: 50px;
-	right: 50px;
+	right: 30px;
 	background-image: url(boton.svg);
 	width: 50px;
 	display: none;
